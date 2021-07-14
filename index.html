@@ -39,7 +39,7 @@
       <div class="bill-container">
         <div class="bill-amount">
           <h5>Bill</h5>
-          <input type="number">
+          <input type="number" required>
         </div>
         <div class="select-tip">
           <h5>Select Tip %</h5>
@@ -49,14 +49,15 @@
             <input type="button" value="15%">
             <input type="button" value="25%">
             <input type="button" value="50%">
-            <input type="button" value="Custom">
+            <input type="text" placeholder="Custom">
           </div>
         </div>
         <div class="number-people">
           <h5>
             Number of People
           </h5>
-          <input type="number">
+          <span class="error">Can't be zero</span>
+          <input type="number" required>
         </div>
       </div>
       <div class="result-contaier">
