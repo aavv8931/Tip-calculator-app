@@ -1,0 +1,23 @@
+body{
+    background-color: #C5E4E7;
+    font-family: "Space Mono", Arial, Helvetica, sans-serif;
+    width: 375px;
+    height: 933px;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container{
+    margin: 50px auto 40.86px;
+}
+
+.calculator{
+    background-color: #FFF;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 32px 43px rgba(79, 166, 175, 0.200735);
+}
