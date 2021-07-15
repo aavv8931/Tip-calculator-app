@@ -38,11 +38,11 @@
     <div class="calculator">
       <div class="bill-container">
         <div class="bill-amount">
-          <h5>Bill</h5>
-          <input type="number" required>
+          <p>Bill</p>
+          <input type="number" placeholder="0.00" required>
         </div>
         <div class="select-tip">
-          <h5>Select Tip %</h5>
+          <p>Select Tip %</p>
           <div class="button-tip-amount">
             <input type="button" value="5%">
             <input type="button" value="10%">
@@ -53,18 +53,18 @@
           </div>
         </div>
         <div class="number-people">
-          <h5>
+          <p>
             Number of People
-          </h5>
+          </p>
           <span class="error">Can't be zero</span>
-          <input type="number" required>
+          <input type="number" placeholder="0" required>
         </div>
       </div>
       <div class="result-contaier">
         <div class="tip-amount">
           <div class="tip-desc">
             <p>Tip Amount</p>
-            <p>/ person</p>
+            <span>/ person</span>
           </div>
           <div class="total-tip">
             <h1>$0.00</h1>
@@ -73,7 +73,7 @@
         <div class="total-amount">
           <div class="total-desc">
             <p>Total</p>
-            <p>/ person</p>
+            <span>/ person</span>
           </div>
           <div class="total-person">
             <h1>$0.00</h1>
