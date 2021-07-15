@@ -33,10 +33,27 @@ input[type="number"]{
     background-position: 19.26px center;
     text-align: right;
     padding-right: 17.48px;
+    font-family: "Space Mono";
+    
 }
 
 input::placeholder{
     text-align: right;
+}
+
+input[type='button']{
+    width: 47%;
+    height: 48px;
+    background: #00474B;
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 16px;
+    color: #FFF;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Space Mono";
 }
 
 /* Main Container */
@@ -53,6 +70,11 @@ input::placeholder{
     margin: 50px auto 40.86px;
 }
 
+#logo{
+    width: 86.88px;
+    height: 53.14px;
+}
+
 /* Calculator Container */
 .calculator{
     background-color: #FFF;
@@ -66,7 +88,7 @@ input::placeholder{
 
 .bill-container{
     width: 90%;
-    margin: 20px auto 10px;
+    margin: 0 auto;
     height: 436px;
 }
 
@@ -74,10 +96,11 @@ input::placeholder{
 
 .bill-amount{
     height: 78px;
-    margin-bottom: 32px;
+    margin: 20px 0 32px;
 }
 
 .bill-amount p{
+    height: 24px;
     margin-bottom: 6px;
 }
 
@@ -85,8 +108,48 @@ input::placeholder{
     background-image: url('../images/icon-dollar.svg');
 }
 
+/* Select Tip Container */
 
+.select-tip{
+    margin-bottom: 32px;
+    height: 216px;
+}
 
+.select-tip p{
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.button-tip-amount{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button-tip-amount input[type='number']{
+    width: 41%;
+    padding-right: 19px;
+}
+
+.tip:focus{
+    background-color: #26C2AE;
+    color: #00474B;
+}
+
+/* Number of People container */
+
+.number-people{
+    height: 78px;
+}
+
+.number-people p{
+    margin-bottom: 6px;
+}
+
+.error{
+    display: none;
+}
 
 .number-people input{
     background-image: url('../images/icon-person.svg');
