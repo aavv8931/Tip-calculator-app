@@ -88,7 +88,7 @@ input[type='button']{
 
 .bill-container{
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 32px;
     height: 436px;
 }
 
@@ -153,4 +153,14 @@ input[type='button']{
 
 .number-people input{
     background-image: url('../images/icon-person.svg');
+}
+
+/* Result Container */
+
+.result-container{
+    width: 90%;
+    margin: 0 auto;
+    height: 257px;
+    background-color: #00474B;
+    border-radius: 15px;
 }
