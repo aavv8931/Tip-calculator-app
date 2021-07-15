@@ -4,7 +4,42 @@ body{
     width: 375px;
     height: 933px;
     margin: 0;
+} 
+
+/* Global Style */
+
+h1, p{
+    margin: 0;
 }
+
+p{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #5e7a7d;
+}
+
+/* All elements (input) that has an attibute value of 'number' */
+input[type="number"]{
+    width: 94%;
+    height: 48px;
+    border-style: none;
+    border-radius: 5px;
+    background: #F3F9FA;
+    color: #00474b;
+    font-size: 1.5rem;
+    line-height: 2.22rem;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: 19.26px center;
+    text-align: right;
+    padding-right: 17.48px;
+}
+
+input::placeholder{
+    text-align: right;
+}
+
+/* Main Container */
 
 .main{
     display: flex;
@@ -12,12 +47,47 @@ body{
     align-items: center;
 }
 
+/* Logo Container */
+
 .logo-container{
     margin: 50px auto 40.86px;
 }
 
+/* Calculator Container */
 .calculator{
     background-color: #FFF;
     border-radius: 25px 25px 0 0;
     box-shadow: 0 32px 43px rgba(79, 166, 175, 0.200735);
+    width: 375px;
+    height: 789px;
+}
+
+/* Bill Container */
+
+.bill-container{
+    width: 90%;
+    margin: 20px auto 10px;
+    height: 436px;
+}
+
+/* Bill amount */
+
+.bill-amount{
+    height: 78px;
+    margin-bottom: 32px;
+}
+
+.bill-amount p{
+    margin-bottom: 6px;
+}
+
+.bill-amount input{
+    background-image: url('../images/icon-dollar.svg');
+}
+
+
+
+
+.number-people input{
+    background-image: url('../images/icon-person.svg');
 }
