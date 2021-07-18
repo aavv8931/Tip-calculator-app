@@ -1,8 +1,6 @@
 body{
     background-color: #C5E4E7;
     font-family: "Space Mono", Arial, Helvetica, sans-serif;
-    width: 375px;
-    height: 933px;
     margin: 0;
 } 
 
@@ -17,6 +15,8 @@ p{
     font-size: 1rem;
     color: #5e7a7d;
 }
+
+/* Mobile Style 375px */
 
 /* All elements (input) that has an attibute value of 'number' */
 input[type="number"]{
@@ -219,3 +219,83 @@ input[type='button']{
     font-size: 1.25rem;
 }
 
+.attribution{
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    body{
+        height: 1024px;
+        overflow-y: hidden;
+    }
+
+    /* Calculator Container */
+
+    .calculator{
+        display: flex;
+        flex-direction: row;
+        width: 920px;
+        height: 481px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-radius: 25px;
+    }
+
+    .bill-container, .result-container{
+        width: 45%;
+        margin: 45px 0 48px;
+    }
+
+    .bill-container{
+        height: 388px;
+        margin: 45px 0 48px;
+    }
+
+    .bill-amount{
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    /* Select Tip Container */
+
+    .select-tip{
+        height: 152px;
+        margin-bottom: 40px;
+    }
+    input[type='button']{
+        width: 31%;
+    }
+
+    .button-tip-amount input[type='number']{
+        width: 31%;
+        padding-right: 0;
+    }
+
+    .button-tip-amount input::placeholder{
+        text-align: center;
+    }
+
+
+
+    /* Result Container */
+
+    .result-container{
+        height: 410px;
+        margin: 45px 0 15px;
+    }
+
+
+    .tip-desc, .total-tip{
+        margin: 70px 0 25px;
+    }
+
+    .total-person h1, .total-tip h1{
+        font-size: 3rem;
+    }
+
+    /* Reset Button */
+
+    .reset-button{
+        margin-top: 130px;
+    }
+}
