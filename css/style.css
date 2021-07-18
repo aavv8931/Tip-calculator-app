@@ -164,3 +164,58 @@ input[type='button']{
     background-color: #00474B;
     border-radius: 15px;
 }
+
+
+.tip-amount, .total-amount{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.tip-amount{
+    margin: 0 auto;
+   
+}
+
+.tip-amount p, .total-amount p{
+    color: #FFF;
+}
+
+.tip-amount span, .total-amount span{
+    color: #7F9D9F;
+    font-size: 0.8125rem;
+    line-height: 1.1875rem;
+
+}
+
+.tip-amount h1, .total-amount h1{
+    color: #26C2AE;
+    font-size: 2rem;
+    line-height: 2.9375rem;
+}
+
+.tip-desc, .total-tip{
+    margin: 37px 0 20px;
+}
+
+.total-amount{
+    margin: 0 auto;
+    
+}
+
+/* Rest button */
+
+.reset-button{
+    width: 90%;
+    margin: 32px auto 0;
+}
+
+#reset{
+    width: 100%;
+    height: 48px;
+    background-color: #26C2AE;
+    border-radius: 5px;
+    color: #00474B;
+    font-size: 1.25rem;
+}
+
